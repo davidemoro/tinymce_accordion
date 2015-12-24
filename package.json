@@ -1,0 +1,20 @@
+{
+  "name": "tinymce_accordion",
+  "version": "0.0.1",
+  "description": "Twitter Bootstrap accordion plugin for TinyMCE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidemoro/tinymce_accordion.git"
+  },
+  "keywords": [
+    "tinymce",
+    "accordion",
+    "bootstrap"
+  ],
+  "author": "Davide Moro <davide.moro@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidemoro/tinymce_accordion/issues"
+  },
+  "homepage": "https://github.com/davidemoro/tinymce_accordion#readme"
+}
