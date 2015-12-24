@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/davidemoro/tinymce_accordion/issues"
   },
-  "homepage": "https://github.com/davidemoro/tinymce_accordion#readme"
+  "homepage": "https://github.com/davidemoro/tinymce_accordion#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
 }
