@@ -185,6 +185,8 @@
                 });
                 
                 ed.on('KeyDown', function(ed, e) {
+                    // TODO: no more needed with newest noneditable plugin
+                    return;
                     var range, elem, accordionRootSelector, textContentLength, keyCode, moveKeys, selectedBlocks, found, parent1, parent2;
 
                     found = false;
