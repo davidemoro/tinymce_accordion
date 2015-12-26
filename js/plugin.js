@@ -73,9 +73,8 @@
     Handlebars.registerPartial('accordionItem', accordionItemTemplate);
     accordionTemplate = Handlebars.compile(accordionSource);
 
-    tinymce.PluginManager.requireLangPack('accordion');
-    tinymce.create('tinymce.plugins.AccordionPlugin', {
-        init: function(ed, url) {
+//    tinymce.PluginManager.requireLangPack('accordion');
+      var initPlugin = function(ed, url) {    // no more ed, url?
             var buttons;
 
             // buttons
@@ -426,9 +425,9 @@
                 selected = ed.selection.getNode();
                 selectedContent = ed.selection.getContent();
 
-                if (conf.node || selectedContent) {
+                if (conf && conf.node || selectedContent) {
                     // There is a selected content OR a node passed by the initialization popup
-                    if (! conf.node) {
+                    if (conf && ! conf.node) {
                         // There is no node in conf, let's open the popup and choose if we
                         // want to create an accordion or collapsable elem
                         ed.windowManager.open({
@@ -505,19 +504,8 @@
                 ed.addButton(item[0], item[1]);
             });
 
-        },
-
-        getInfo: function() {
-            return {
-                longname: 'Accordion Plugin',
-                author: 'Davide Moro (@ Abstract srl for EEA)',
-                authorurl: 'http://davidemoro.blogspot.it/',
-                infourl: 'https://github.com/collective/collective.sweeteditor',
-                version: version
-            };
-        }
-    });
+        };
 
     // Register plugin
-    tinymce.PluginManager.add('accordion', tinymce.plugins.AccordionPlugin);
+    tinymce.PluginManager.add('accordion', initPlugin);
 })();
