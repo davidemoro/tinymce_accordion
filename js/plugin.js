@@ -164,6 +164,8 @@
 
                 // Events
                 ed.on('NodeChange', function(ed, cm, e) {
+                    // TODO: probably no more needed with the newest noneditable plugin
+                    return;
                     // Prevent the p
                     var pElem, parentNode, found;
                     parentNode = e.parentNode;
