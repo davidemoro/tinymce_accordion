@@ -139,7 +139,7 @@
                     // TODO: remove date bogus parameter (useful during development)
                     ed.dom.loadCSS(url + '/css/accordion.css?version=' + version  + '&date=' + new Date().getTime());
                 }
-                if (ed && ed.plugins.contextmenu) {
+                if (ed && ed.plugins.contextmenu && ed.plugins.contextmenu.on) {
                     ed.plugins.contextmenu.on('contextMenu', function(plugin, menu, element) {
                         var groupMenu;
                         if (! ed.dom.getParent(element, '.mceTabHeader')) {
