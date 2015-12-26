@@ -446,7 +446,7 @@
                         return;
                     } else {
                         // There is a node in conf passed by the popup, let's proceed
-                        selected = conf && conf.node;
+                        selected = conf ? conf.node : selected;
                     }
 
                     if (['p', 'table', 'b', 'a', 'br'].indexOf(selected.nodeName) !== -1) {
