@@ -133,13 +133,54 @@
 
                 ed.parser.addNodeFilter('div', function (nodes) {
                     tinymce.each(nodes, function (node) {
-                        if (node.attr('class').indexOf('panel-group') !== -1) {
-                            console.log('break');
+                        var nodeClass = node.attr('class');
+                        if (nodeClass.indexOf('panel-group') !== -1) {
+                            node.attr('class', nodeClass + ' mceNonEditable');
+                        }
+                    });
+                });
+                ed.parser.addNodeFilter('a', function (nodes) {
+                    tinymce.each(nodes, function (node) {
+                        var nodeClass = node.attr('class');
+                        if (nodeClass.indexOf('accordion-toggle') !== -1) {
+                            node.attr('class', nodeClass + ' mceEditable');
+                        }
+                    });
+                });
+                ed.parser.addNodeFilter('div', function (nodes) {
+                    tinymce.each(nodes, function (node) {
+                        var nodeClass = node.attr('class');
+                        if (nodeClass.indexOf('panel-body') !== -1) {
+                            node.attr('class', nodeClass + ' mceEditable');
                         }
                     });
                 });
 
                 ed.serializer.addNodeFilter('div', function (nodes, name, args) {
+                    tinymce.each(nodes, function (node) {
+                        var nodeClass = node.attr('class');
+                        if (nodeClass.indexOf('panel-group') !== -1) {
+                            node.attr('class', nodeClass.replace('mceNonEditable', '');
+                        }
+                    });
+                });
+
+                ed.serializer.addNodeFilter('a', function (nodes, name, args) {
+                    tinymce.each(nodes, function (node) {
+                        var nodeClass = node.attr('class');
+                        if (nodeClass.indexOf('accordion-toggle') !== -1) {
+                            node.attr('class', nodeClass.replace('mceEditable', '');
+                        }
+                    });
+                });
+
+                ed.serializer.addNodeFilter('div', function (nodes, name, args) {
+                    tinymce.each(nodes, function (node) {
+                        var nodeClass = node.attr('class');
+                        if (nodeClass.indexOf('panel-body') !== -1) {
+                            node.attr('class', nodeClass.replace('mceEditable', '');
+                        }
+                    });
                 });
             });
 
