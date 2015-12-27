@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" href="../node_modules/tinymce/skins/lightgray/skin.min.css">
+    </head>
+    <body>
+        <textarea></textarea>
+
+        <!-- Js -->
+        <script type="text/javascript" src="../.tmp/tinymce.js"></script>
+        <script type="text/javascript" src="../node_modules/handlebars/dist/handlebars.js"></script>
+        <script type="text/javascript">
+            tinymce.init({
+              selector: 'textarea',
+              height: 500,
+              plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table contextmenu paste code noneditable tinymce_accordion'
+             ],
+             toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+             toolbar2: 'accordion accordionDelete accordionItemDelete accordionItemInsertAfter accordionItemInsertBefore'
+           });
+        </script>
+    </body>
+</html>
