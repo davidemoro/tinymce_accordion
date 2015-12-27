@@ -5,10 +5,9 @@
  */
 (function() {
     var defaultAccordionItem, emptyParagraph, accordionItemSource, accordionItemTemplate,
-        accordionSource, accordionTemplate, addAccordionCondition, accordionCondition, version, VK,
+        accordionSource, accordionTemplate, addAccordionCondition, accordionCondition, version,
         buttonActive;
 
-    VK = tinymce.VK;
     version = '0.1';
 
     buttonActive = function (funct) {
