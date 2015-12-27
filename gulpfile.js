@@ -14,7 +14,7 @@ gulp.task('copy-vendor', function () {
 
 gulp.task('copy-plugins', function() {
   gulp.src(['./js/**/*'])
-  .pipe(gulp.dest(dest + '/plugins/tinymce_accordion'));
+  .pipe(gulp.dest(dest + '/plugins/accordion'));
 });
 
 // Default task

@@ -1,7 +1,7 @@
 /**
- * Plone snippet Plugin
+ * TinyMCE Twitter Bootstrap accordion plugin
  *
- * @author Davide Moro (inspired by Maurizio Lupo's redomino.tinymceplugins.snippet)
+ * @author Davide Moro
  */
 (function() {
     var defaultAccordionItem, emptyParagraph, accordionItemSource, accordionItemTemplate,
@@ -72,7 +72,7 @@
     Handlebars.registerPartial('accordionItem', accordionItemTemplate);
     accordionTemplate = Handlebars.compile(accordionSource);
 
-//    tinymce.PluginManager.requireLangPack('accordion');
+    tinymce.PluginManager.requireLangPack('accordion');
       var initPlugin = function(ed, url) {    // no more ed, url?
             var buttons;
 
@@ -386,5 +386,5 @@
         };
 
     // Register plugin
-    tinymce.PluginManager.add('tinymce_accordion', initPlugin);
+    tinymce.PluginManager.add('accordion', initPlugin);
 })();
