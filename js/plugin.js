@@ -79,7 +79,7 @@
             // buttons
             buttons = [
                 ['accordion',
-                 {text: 'accordion.desc',
+                 {title: 'accordion.desc',
                   cmd: 'mceAccordion',
                   ui: false,
                   value: {},
@@ -89,7 +89,7 @@
                  }
                 ],
                 ['accordionDelete',
-                 {text: 'accordion.deletedesc',
+                 {title: 'accordion.deletedesc',
                   cmd: 'mceAccordionDelete',
                   image: url + '/img/accordion-delete.gif',
                   icon: 'accordion-delete',
@@ -97,7 +97,7 @@
                   }
                 ],
                 ['accordionItemDelete', {
-                  text: 'accordion.itemdeletedesc',
+                  title: 'accordion.itemdeletedesc',
                   cmd: 'mceAccordionItemDelete',
                   image: url + '/img/accordion-item-delete.gif',
                   icon: 'accordion-item-delete',
@@ -105,7 +105,7 @@
                   }
                 ],
                 ['accordionItemInsertAfter', {
-                  text: 'accordion.iteminsertafterdesc',
+                  title: 'accordion.iteminsertafterdesc',
                   cmd: 'mceAccordionItemInsert',
                   ui: false,
                   value: {after: true},
@@ -115,7 +115,7 @@
                   }
                 ],
                 ['accordionItemInsertBefore', {
-                  text: 'accordion.iteminsertbeforedesc',
+                  title: 'accordion.iteminsertbeforedesc',
                   cmd: 'mceAccordionItemInsert',
                   ui: false,
                   value: {after: false},
