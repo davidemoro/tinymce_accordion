@@ -160,7 +160,7 @@
                     tinymce.each(nodes, function (node) {
                         var nodeClass = node.attr('class');
                         if (nodeClass.indexOf('panel-group') !== -1) {
-                            node.attr('class', nodeClass.replace('mceNonEditable', '');
+                            node.attr('class', nodeClass.replace('mceNonEditable', ''));
                         }
                     });
                 });
@@ -169,7 +169,7 @@
                     tinymce.each(nodes, function (node) {
                         var nodeClass = node.attr('class');
                         if (nodeClass.indexOf('accordion-toggle') !== -1) {
-                            node.attr('class', nodeClass.replace('mceEditable', '');
+                            node.attr('class', nodeClass.replace('mceEditable', ''));
                         }
                     });
                 });
@@ -178,7 +178,7 @@
                     tinymce.each(nodes, function (node) {
                         var nodeClass = node.attr('class');
                         if (nodeClass.indexOf('panel-body') !== -1) {
-                            node.attr('class', nodeClass.replace('mceEditable', '');
+                            node.attr('class', nodeClass.replace('mceEditable', ''));
                         }
                     });
                 });
