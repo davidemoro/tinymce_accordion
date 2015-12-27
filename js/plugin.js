@@ -386,5 +386,5 @@
         };
 
     // Register plugin
-    tinymce.PluginManager.add('accordion', initPlugin);
+    tinymce.PluginManager.add('tinymce_accordion', initPlugin);
 })();
