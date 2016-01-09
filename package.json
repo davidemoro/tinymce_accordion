@@ -20,5 +20,8 @@
   "dependencies": {
     "handlebars": "^4.0.5",
     "tinymce": "^4.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
   }
 }
