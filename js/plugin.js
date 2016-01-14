@@ -79,7 +79,7 @@
             // buttons
             buttons = [
                 ['accordion',
-                 {title: 'accordion.desc',
+                 {title: 'desc',
                   cmd: 'mceAccordion',
                   ui: false,
                   value: {},
@@ -89,7 +89,7 @@
                  }
                 ],
                 ['accordionDelete',
-                 {title: 'accordion.deletedesc',
+                 {title: 'deletedesc',
                   cmd: 'mceAccordionDelete',
                   image: url + '/img/accordion-delete.gif',
                   icon: 'accordion-delete',
@@ -97,7 +97,7 @@
                   }
                 ],
                 ['accordionItemDelete', {
-                  title: 'accordion.itemdeletedesc',
+                  title: 'itemdeletedesc',
                   cmd: 'mceAccordionItemDelete',
                   image: url + '/img/accordion-item-delete.gif',
                   icon: 'accordion-item-delete',
@@ -105,7 +105,7 @@
                   }
                 ],
                 ['accordionItemInsertAfter', {
-                  title: 'accordion.iteminsertafterdesc',
+                  title: 'iteminsertafterdesc',
                   cmd: 'mceAccordionItemInsert',
                   ui: false,
                   value: {after: true},
@@ -115,7 +115,7 @@
                   }
                 ],
                 ['accordionItemInsertBefore', {
-                  title: 'accordion.iteminsertbeforedesc',
+                  title: 'iteminsertbeforedesc',
                   cmd: 'mceAccordionItemInsert',
                   ui: false,
                   value: {after: false},
@@ -201,7 +201,7 @@
                             } else {
                                 menu.addSeparator();
                             }
-                            groupMenu = menu.addMenu({title : 'accordion.group'});
+                            groupMenu = menu.addMenu({title : 'group'});
                             tinymce.each(buttons, function (item){
                                 var condition;
                                 condition = item[2];
